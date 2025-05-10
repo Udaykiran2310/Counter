@@ -1,25 +1,24 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import ScoreCard from './components/ScoreCard/ScoreCard';
+import ScoreIncrementButton from './components/ScoreIncrementButton/ScoreIncrementButton';
 
 function App() {
+  let [score, scoreFun] = useState(0);
+  function incrementCounter(value){
+    score = score+value;
+    scoreFun(score);
+
+      // counter = counter + 1;
+      // console.log("updated counter", counter);
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <ScoreCard score={score} />
+      <ScoreIncrementButton incrementCounter={incrementCounter}/>
     </div>
   );
+
 }
 
 export default App;

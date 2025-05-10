@@ -1,0 +1,10 @@
+.scoreborad-container{
+  background-color: rgb(21, 197, 168);
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  height: 50vh;
+}
+.score{
+  font-size: 100px;
+}

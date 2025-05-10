@@ -1,0 +1,14 @@
+.score-button{
+  padding: 20px 60px;
+  background-color: rgb(250, 29, 29);
+  margin: 20px;
+  color: white;
+  font-size: 30px;
+  border: none;
+
+}
+
+.score-button:hover{
+  cursor: pointer;
+  background-color: rgb(34, 30, 50);
+}
