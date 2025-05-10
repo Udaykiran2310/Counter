@@ -10,6 +10,7 @@ function ScoreIncrementButton(props){
         <button className='score-button'  onClick={function(){incrementCounter(-5);}}>-5</button>
         <button className='score-button'  onClick={function(){incrementCounter(10);}}>+10</button>
         <button className='score-button'  onClick={function(){incrementCounter(100);}}>+100</button>
+        <button className='score-button'  onClick={function(){incrementCounter(50);}}>+50</button>
       </div>
     );
 }
